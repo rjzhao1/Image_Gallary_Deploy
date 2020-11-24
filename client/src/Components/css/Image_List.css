@@ -1,0 +1,73 @@
+@import url('https://fonts.google.com/specimen/Raleway?sidebar.open=true&selection.family=Raleway:wght@200');
+
+:root {
+   --primary: #e056fd;
+   --error: #e65f5f;
+}
+
+body {
+   font-family: 'Raleway';
+}
+
+.gallery {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   row-gap: 1rem;
+   column-gap: 2rem;
+   justify-self: center;
+   align-items: center;
+   justify-content: center;
+   margin-top: 5rem;
+}
+
+.gallery_item {
+   width: 500px;
+   height: 550px;
+   overflow: hidden;
+}
+
+.gallery_item img {
+   float: left;
+   width: 500px;
+   height: 450px;
+   object-fit: cover;
+   transition: 1s;
+   box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.gallery_item img:hover {
+   opacity: 70%;
+}
+
+.icon {
+   margin-top: 1em;
+   cursor: pointer;
+   font-size: 2em;
+}
+
+button,
+input {
+   display: none;
+}
+
+label {
+   display: block;
+   width: 10%;
+   border: 1px solid var(--primary);
+   border-radius: 5%;
+   margin: 10px auto;
+   line-height: 30px;
+   color: var(--primary);
+   font-weight: bold;
+   font-size: 24px;
+   text-align: center;
+}
+
+label:hover {
+   background: var(--primary);
+   color: white;
+}
+
+.error {
+   color: var(--error);
+}
